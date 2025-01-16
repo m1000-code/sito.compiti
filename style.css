@@ -1,0 +1,72 @@
+/* Reset di margini e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c394f8;
+    color: #333;
+    line-height: 1.6;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+header {
+    background-color: #3d0e5c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#data-odierna {
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 20px;
+}
+
+#compiti h2 {
+    color: #3d0e5c;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #3d0e5c;
+    color: white;
+}
+
+footer p {
+    font-size: 1rem;
+}
+ 
+
+
+
+
+

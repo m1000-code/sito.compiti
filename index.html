@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compiti del Giorno</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Stili personalizzati per il sorteggio */
+       
+        .container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #29023b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .result {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Compiti per oggi</h1>
+    </header>
+       
+    <main>
+        <section id="compiti">
+            <h2>Lista dei compiti:</h2>
+            <ul>
+                <li>Matematica: Esercizio 10, pagina 45</li>
+                <li>Italiano: Composizione su "Il mio animale preferito"</li>
+                <li>Scienze: Leggere il capitolo 3</li>
+            </ul>
+        </section>
+
+        <!-- Sezione per il bottone di sorteggio -->
+        <section class="container">
+            <h2>Pulsante dei rosteggi</h2>
+            <button class="button" onclick="Sorteggia()">Sorteggia</button>
+            <div class="result" id="risultato"></div>
+        </section>
+    </main>
+  
+    <footer>
+        <p>&copy; 2025 Compiti del Giorno</p>
+    </footer>
+
+    <script>
+        // Aggiungere la data odierna
+        const dataOdierna = new Date().toLocaleDateString('it-IT', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        // Mostrare la data nel footer
+        const footer = document.querySelector('footer p');
+        footer.innerHTML += ` - Oggi è ${dataOdierna}`;
+
+        // Lista delle opzioni sulla ruota
+        const opzioni = [
+            'alunno 1', 'alunno 2', 'alunno 3', 'alunno 4', 'alunno 5',
+            'alunno 6', 'alunno 7', 'alunno 8', 'alunno 9', 'Premio 10',
+            'alunno 11', 'alunno 12', 'alunno 13', 'alunno 14', 'alunno 15',
+           'alunno 16','alunno 17','alunno 18','alunno 19','alunno 20' ,
+           'alunno 21', 'alunno 22', 'alunno 23'
+        ];
+
+        // Funzione per eseguire il sorteggio
+        function Sorteggia() {
+            const risultato = opzioni[Math.floor(Math.random() * opzioni.length)];
+            document.getElementById('risultato').innerText = `Il sorteggio ha selezionato: ${risultato}`;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+           
+        
+
+
+
+
+       
+
+       
